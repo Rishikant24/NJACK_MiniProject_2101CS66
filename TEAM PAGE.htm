@@ -1,0 +1,383 @@
+<html>
+<head>
+<title>Team Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/*@keyframes ex{
+			0% { background-image : linear-gradient(to bottom right, #F3904F, #3B4371);}
+			50% {  background-image : linear-gradient(to top left, #A770EF, #CF8BF3, #FDB99B);}
+			100% { background-image : linear-gradient(to bottom right, #F3904F, #3B4371);}
+			}*/
+		/*animation-name: ex;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		background: url("bg1.jpeg") no-repeat center fixed;
+		background-size: cover;*/
+body{
+background-color: #42455a;
+}			 
+.s{
+	list-style-type: none;
+	overflow: hidden;
+  background-color: #333;
+  position: relative;
+	}
+.p{
+float: right;
+}
+
+li a.top{
+	padding: 20px;
+	display:block;
+	color: white;
+	text-decoration:none;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 22px;
+	}
+li a.top:hover{
+			background-color: #DC143C;
+			text-decoration: underline;
+			}
+a.back{	
+		color:white;
+		text-decoration: none;
+		}
+			
+a.topr{padding: 20px;
+	display:block;
+	color: white;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 22px;
+	background-color:#DC143C;
+		text-decoration: underline;
+		}
+.lord{
+		min-height: 100vh;
+		}
+.card{
+		width: 400px;
+		height: 450px;
+		transition: opacity 3s ease-in;
+		background-color: white;
+		border: 1px;
+		border-radius:15px;
+		}
+.section2
+{	min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.cintro{
+			color: white;
+			font-size: 60px;
+			font-family: Calibri;
+			padding-bottom: 50px;
+			}
+	
+.intro{
+		 min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size:60px;
+		}
+.title{
+		font-family: Arial;
+		color: black;
+		font-size: 30px;
+		padding: 20px;
+		font-weight: bold;
+		}
+.name{
+		font-family: Calibri;
+		color: black;
+		font-size: 25px;
+		padding: 5px;
+		margin-top: 20px;
+		margin-bottom:20px;
+		}
+img{
+		border-radius: 50%;
+		}
+.image{
+		width:350px;
+		height:200px;
+		}
+.card1{
+		float: left;
+		margin: 20px 40px 4px 10px;
+		width: 350px;
+		height: 450px;
+		background-color:white;
+		transition: opacity 3s ease-in;
+		border: 1px;
+		border-radius:15px;
+		}
+		
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 10px;
+  border-radius: 50%;
+}
+.fa:hover{
+			opacity:0.7;
+		}
+.fa-google{
+				background: #dd4b39;
+				color: white;
+				}
+.fa-linkedin{
+				 background: #125688;
+				color: white;
+				}
+.fa-facebook {background: white;
+  color: #333 ;
+}
+.section3{
+			background-color: #333;
+			height: 400px;
+			color:white;
+		}
+.r{	
+list-style-type: none;
+	overflow: hidden;
+	}
+li a.bottom{	
+				padding-bottom: 18px;
+				padding-top: 18px;
+				display:block;
+				color: white;
+				font-family: Calibri;
+				font-size: 23px;
+				text-decoration: none;
+				}
+li a.bottom:hover{
+					color: #DC143C;
+					}
+	.left{
+		float: left;
+		width: 250px;
+		height: 300px;
+		justify-content: center;
+		align-items: center;
+  }
+  .symbol{
+			float:left;
+			width:800px;
+			height: 300px;
+			justify-content: center;
+		align-items: center;
+		}
+			
+.reveal{
+  position: relative;
+  transform: translateY(180px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+</style>
+
+<script>				
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+</script>
+</head>
+
+<body>
+<a id="ttop">
+<ul class="s">
+<li class="p"><a class="top" href="#q">CONTACT US</a></li>
+<li class="p"><a class="top" href="#q">IIT PATNA</a></li>
+<li class="p"><a class="topr" href="#q">TEAM</a></li>
+<li class="p"><a class="top" href="#q">EVENTS</a></li>
+<li class="p"><a class="top" href="#q">HOME</a></li>
+</ul>
+
+<center>
+<div class="reveal"><div class="intro"><h1><font face="Arial">MEET THE TEAM</font></h1></div></div>
+<div class="reveal">
+<div section="section2">
+<div class="cintro">THE LEADER</div>
+<div class="card">
+<div class="card-transition">
+<div class="title">	Rishikant Chigrupaatii</div>
+<img  src="2.jpg" style="width:180px"><br><br>
+<div class="name">Overall Coordinator</div>
+<a href="#qq" class="fa fa-google"></a>
+<a href="#qq" class="fa fa-linkedin"></a>
+</div>
+</div>
+</div>
+</div>
+</center><br><br>
+<section class="section2">
+<div class="reveal">
+<center>
+<h1><font face="Calibri" color="white" size="30px">TECHNICAL TEAM</font></h1>
+</center><br><br><br>
+<div class="card1">
+<div class="card-transition">
+<center>
+<div class="title">	Coordinator 1</div>
+<div class="image"><img  src="3.jpg" style="width:180px"></div>
+<div class="name">Position</div>
+<a href="#qq" class="fa fa-google"></a>
+<a href="#qq" class="fa fa-linkedin"></a>
+</center>
+</div>
+</div>
+<div class="card1">
+<center>
+<div class="title">	Coordinator 2</div>
+<div class="image"><img  src="8.jpg" style="width:150px"></div>
+<div class="name">Position</div>
+<a href="#qq" class="fa fa-google"></a>
+<a href="#qq" class="fa fa-linkedin"></a>
+</center>
+</div>
+<div class="card1">
+<center>
+<div class="title">	Coodinator 3</div>
+<div class="image"><img  src="5.png" style="width:200px"></div>
+<div class="name">Position</div>
+<a href="#qq" class="fa fa-google"></a>
+<a href="#qq" class="fa fa-linkedin"></a>
+</center>
+</div>
+</div>
+</div>
+</section><br><br>
+
+<section class="section2">
+<div class="reveal">
+<center>
+<h1><font face="Calibri" color="white" size="30px">DESIGN TEAM</font></h1>
+</center><br><br><br>
+<div class="card1">
+<div class="card-transition">
+<center>
+<div class="title">	Coordinator 1</div>
+<div class="image"><img  src="6.jpg" style="width:200px"></div>
+<div class="name">Position</div>
+<a href="#qq" class="fa fa-google"></a>
+<a href="#qq" class="fa fa-linkedin"></a>
+</center>
+</div>
+</div>
+<div class="card1">
+<center>
+<div class="title">	Coordinator 2</div>
+<div class="image"><img  src="7.jpg" style="width:200px"></div>
+<div class="name">Position</div>
+<a href="#qq" class="fa fa-google"></a>
+<a href="#qq" class="fa fa-linkedin"></a>
+</center>
+</div>
+<div class="card1">
+<center>
+<div class="title">	Coodinator 3</div>
+<div class="image"><img  src="9.png" style="width:200px"></div>
+<div class="name">Position</div>
+<a href="#qq" class="fa fa-google"></a>
+<a href="#qq" class="fa fa-linkedin"></a>
+</center>
+</div>
+</div>
+</div>
+</section><br><br>
+
+<section class="section2">
+<div class="reveal">
+<center>
+<h1><font face="Calibri" color="white" size="30px">MEDIA AND PR TEAM</font></h1>
+</center><br><br><br>
+<div class="card1">
+<div class="card-transition">
+<center>
+<div class="title">	Coordinator 1</div>
+<div class="image"><img  src="10.jpg" style="width:240px"></div>
+<div class="name">Position</div>
+<a href="#qq" class="fa fa-google"></a>
+<a href="#qq" class="fa fa-linkedin"></a>
+</center>
+</div>
+</div>
+<div class="card1">
+<center>
+<div class="title">	Coordinator 2</div>
+<div class="image"><img  src="11.jpg" style="width:240px"></div>
+<div class="name">Position</div>
+<a href="#q" class="fa fa-google"></a>
+<a href="#q" class="fa fa-linkedin"></a>
+</center>
+</div>
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<center><h1><font size="100px" color="white"><a class="back" href="#ttop">^</a></font></h1></center>
+<section class="section3">
+<div class="left">
+<center>
+<h1><font face="Calibri">Quick Links</h1>
+<ul class="r">
+<li><a class="bottom" href="#q">HOME</a></li>
+<li><a class="bottom" href="#q">EVENTS</a></li>
+<li><a class="bottom" class="team" href="#q">TEAM</a></li>
+<li><a class="bottom" href="#q">IIT PATNA</a></li>
+<li><a class="bottom" href="#q">CONTACT US</a></li>
+</ul>
+</center>
+</div>
+<div class="symbol" >
+<br><br>
+<center>
+<img src="logo.png" style="width:300px">
+<center>
+</div>
+<div class="left" >
+<h1><font face="Calibri">FOLLOW US ON:</font></h1>
+<ul class="r">
+<li><a class="bottom" href="#q">Facebook</a></li>
+<li><a class="bottom" href="#q">Instagram</a></li>
+<li><a class="bottom" class="team" href="#q">Twitter</a></li>
+<li><a class="bottom" href="#q">Linkedin</a></li>
+<li><a class="bottom" href="#q">Gmail</a></li>
+</ul>
+</div>
+
+
+
+</body>
+</html>
+
+
