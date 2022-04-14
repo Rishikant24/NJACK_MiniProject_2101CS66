@@ -103,7 +103,9 @@ a.topr{padding: 20px;
 		}
 img{
 		border-radius: 50%;
+		
 		}
+.pis{width: 200px; height: 200px;}
 .image{
 		width:350px;
 		height:200px;
@@ -142,9 +144,8 @@ img{
 .fa-facebook {background: white;
   color: #333 ;
 }
-.section3{
+.abc { display: visible;
 			background-color: #333;
-			height: 400px;
 			color:white;
 		}
 .r{	
@@ -166,16 +167,27 @@ li a.bottom:hover{
 	.left{
 		float: left;
 		width: 250px;
-		height: 300px;
+		height: 500px;
 		justify-content: center;
 		align-items: center;
+		background-color: #333;
+  }
+  
+  .right {
+					float: left;
+		width: 280px;
+		height: 500px;
+		justify-content: center;
+		align-items: center;
+		background-color: #333;
   }
   .symbol{
 			float:left;
 			width:800px;
-			height: 300px;
+			height: 500px;
 			justify-content: center;
 		align-items: center;
+		background-color: #333;
 		}
 			
 .reveal{
@@ -189,6 +201,55 @@ li a.bottom:hover{
   transform: translateY(0);
   opacity: 1;
 }
+
+.xyz{			display: none;
+		}
+.idk{
+		background-color: #333;
+		}
+		
+@media (max-width: 1325px){
+							.card1{			float: none;
+		margin: 20px 40px 4px 10px;
+		width: 350px;
+		height: 450px;
+		background-color:white;
+		transition: opacity 3s ease-in;
+		border: 1px;
+		border-radius:15px;
+		}
+		}
+		
+@media (max-width: 1325px){
+					.abc{
+					display: none;
+					}
+	@media (max-width: 1325px){	.xyz{
+			display: block;
+			background-color: #333;
+			color:white;
+			height: 1000px;
+			width: 100%;
+			}}
+			@media (max-width: 1325px){	.left{
+		float: none;
+		width: 250px;
+		height: 300px;
+		justify-content: center;
+		align-items: center;
+  }
+					}
+@media (max-width: 1325px){
+							.symbol{
+										height:150px;
+										}
+										}
+
+.mc{
+		float:left;
+		height: 20px;
+		width: 10px;
+		}
 </style>
 
 <script>				
@@ -212,8 +273,10 @@ window.addEventListener("scroll", reveal);
 </head>
 
 <body>
+
 <a id="ttop">
 <ul class="s">
+<img src="100.jpg" class="mc" style="width:120px" "height:15px">
 <li class="p"><a class="top" href="#q">CONTACT US</a></li>
 <li class="p"><a class="top" href="#q">IIT PATNA</a></li>
 <li class="p"><a class="topr" href="#q">TEAM</a></li>
@@ -229,7 +292,7 @@ window.addEventListener("scroll", reveal);
 <div class="card">
 <div class="card-transition">
 <div class="title">	Rishikant Chigrupaatii</div>
-<img  src="2.jpg" style="width:180px"><br><br>
+<img class="pis" src="2.jpg" ><br><br>
 <div class="name">Overall Coordinator</div>
 <a href="#qq" class="fa fa-google"></a>
 <a href="#qq" class="fa fa-linkedin"></a>
@@ -247,7 +310,7 @@ window.addEventListener("scroll", reveal);
 <div class="card-transition">
 <center>
 <div class="title">	Coordinator 1</div>
-<div class="image"><img  src="3.jpg" style="width:180px"></div>
+<div class="image"><img class="pis" src="3.jpg"></div>
 <div class="name">Position</div>
 <a href="#qq" class="fa fa-google"></a>
 <a href="#qq" class="fa fa-linkedin"></a>
@@ -257,7 +320,7 @@ window.addEventListener("scroll", reveal);
 <div class="card1">
 <center>
 <div class="title">	Coordinator 2</div>
-<div class="image"><img  src="8.jpg" style="width:150px"></div>
+<div class="image"><img class="pis" src="8.jpg" style="width:150px"></div>
 <div class="name">Position</div>
 <a href="#qq" class="fa fa-google"></a>
 <a href="#qq" class="fa fa-linkedin"></a>
@@ -266,7 +329,7 @@ window.addEventListener("scroll", reveal);
 <div class="card1">
 <center>
 <div class="title">	Coodinator 3</div>
-<div class="image"><img  src="5.png" style="width:200px"></div>
+<div class="image"><img class="pis" src="5.png" ></div>
 <div class="name">Position</div>
 <a href="#qq" class="fa fa-google"></a>
 <a href="#qq" class="fa fa-linkedin"></a>
@@ -285,7 +348,7 @@ window.addEventListener("scroll", reveal);
 <div class="card-transition">
 <center>
 <div class="title">	Coordinator 1</div>
-<div class="image"><img  src="6.jpg" style="width:200px"></div>
+<div class="image"><img class="pis" src="6.jpg" ></div>
 <div class="name">Position</div>
 <a href="#qq" class="fa fa-google"></a>
 <a href="#qq" class="fa fa-linkedin"></a>
@@ -295,7 +358,7 @@ window.addEventListener("scroll", reveal);
 <div class="card1">
 <center>
 <div class="title">	Coordinator 2</div>
-<div class="image"><img  src="7.jpg" style="width:200px"></div>
+<div class="image"><img class="pis" src="7.jpg" ></div>
 <div class="name">Position</div>
 <a href="#qq" class="fa fa-google"></a>
 <a href="#qq" class="fa fa-linkedin"></a>
@@ -323,7 +386,7 @@ window.addEventListener("scroll", reveal);
 <div class="card-transition">
 <center>
 <div class="title">	Coordinator 1</div>
-<div class="image"><img  src="10.jpg" style="width:240px"></div>
+<div class="image"><img class="pis"  src="10.jpg" ></div>
 <div class="name">Position</div>
 <a href="#qq" class="fa fa-google"></a>
 <a href="#qq" class="fa fa-linkedin"></a>
@@ -333,7 +396,7 @@ window.addEventListener("scroll", reveal);
 <div class="card1">
 <center>
 <div class="title">	Coordinator 2</div>
-<div class="image"><img  src="11.jpg" style="width:240px"></div>
+<div class="image"><img  class="pis" src="11.jpg"></div>
 <div class="name">Position</div>
 <a href="#q" class="fa fa-google"></a>
 <a href="#q" class="fa fa-linkedin"></a>
@@ -346,18 +409,20 @@ window.addEventListener("scroll", reveal);
 <br>
 <br>
 <center><h1><font size="100px" color="white"><a class="back" href="#ttop">^</a></font></h1></center>
-<section class="section3">
+<div class="idk">
+<div class="abc">
+
 <div class="left">
-<center>
-<h1><font face="Calibri">Quick Links</h1>
 <ul class="r">
+<h1><font face="Calibri">Quick Links</h1>
 <li><a class="bottom" href="#q">HOME</a></li>
 <li><a class="bottom" href="#q">EVENTS</a></li>
 <li><a class="bottom" class="team" href="#q">TEAM</a></li>
 <li><a class="bottom" href="#q">IIT PATNA</a></li>
 <li><a class="bottom" href="#q">CONTACT US</a></li>
 </ul>
-</center>
+
+
 </div>
 <div class="symbol" >
 <br><br>
@@ -365,7 +430,7 @@ window.addEventListener("scroll", reveal);
 <img src="logo.png" style="width:300px">
 <center>
 </div>
-<div class="left" >
+<div class="right" >
 <h1><font face="Calibri">FOLLOW US ON:</font></h1>
 <ul class="r">
 <li><a class="bottom" href="#q">Facebook</a></li>
@@ -375,10 +440,39 @@ window.addEventListener("scroll", reveal);
 <li><a class="bottom" href="#q">Gmail</a></li>
 </ul>
 </div>
+</div>
+</div>
+<div class="xyz">
+<div class="symbol" >
+<br><br>
+<img src="logo.png" style="width:100px">
+</div>
+<div class="left">
+<ul class="r">
+<h1><font face="Calibri">Quick Links</h1>
+<li><a class="bottom" href="#q">HOME</a></li>
+<li><a class="bottom" href="#q">EVENTS</a></li>
+<li><a class="bottom" class="team" href="#q">TEAM</a></li>
+<li><a class="bottom" href="#q">IIT PATNA</a></li>
+<li><a class="bottom" href="#q">CONTACT US</a></li>
+</ul>
+
+
+
+<div class="left" >
+
+<ul class="r">
+<li><h1><font face="Calibri">FOLLOW US ON:</font></h1></li>
+<li><a class="bottom" href="#q">Facebook</a></li>
+<li><a class="bottom" href="#q">Instagram</a></li>
+<li><a class="bottom" class="team" href="#q">Twitter</a></li>
+<li><a class="bottom" href="#q">Linkedin</a></li>
+<li><a class="bottom" href="#q">Gmail</a></li>
+</ul>
+</div>
+</div>
 
 
 
 </body>
 </html>
-
-
