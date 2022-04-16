@@ -27,7 +27,7 @@ background-color: #42455a;
 float: right;
 }
 
-li a.top{
+ a.top{
 	padding: 20px;
 	display:block;
 	color: white;
@@ -36,7 +36,7 @@ li a.top{
 	font-weight: bold;
 	font-size: 22px;
 	}
-li a.top:hover{
+ a.top:hover{
 			background-color: #DC143C;
 			text-decoration: underline;
 			}
@@ -210,10 +210,15 @@ li a.bottom:hover{
 		align-items: center;
 		
 		}
+.menu{	
+		display: none;
+		}
+		
 		
 @media (max-width: 1325px){
 							.card1{			float: none;
-		margin: 20px 40px 4px 10px;
+		margin: 20px 40px 4px 20px;
+		padding-left:25px;
 		width: 350px;
 		height: 450px;
 		background-color:white;
@@ -236,7 +241,7 @@ li a.bottom:hover{
 			}}
 			@media (max-width: 1325px){	.left{
 		float: none;
-		width: 250px;
+		width: 100%;
 		height: 300px;
 		justify-content: center;
 		align-items: center;
@@ -245,13 +250,18 @@ li a.bottom:hover{
 @media (max-width: 1325px){
 							.symbol{
 										height:150px;
+										width: 100%;
 										}
 										}
 @media (max-width: 767px){	.mc{
 									display:none;
 									}
 									}
-
+@media (max-width: 767px){
+							.s{
+								display: none;
+								}
+								}
 .mc{
 		float:left;
 		height: 20px;
@@ -260,6 +270,33 @@ li a.bottom:hover{
 .t{
 	float:left;
 	}
+	@media (max-width: 767px){	
+								.menu{
+										display: block;
+										background-color: #333;
+										color: white;
+										}
+										}
+	@media (max-width: 767px){
+
+								.p{ float: none;}
+							.xxx:hover	.dropdown{display: block;}
+							a.top{
+									font-size: 15px;
+									padding: 18px;
+							}
+							a.topr{	font-size: 15px;
+									padding: 18px;}
+							}
+		div.yyy{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}				
+.dropdown{
+			display: none;
+			}
 </style>
 
 <script>				
@@ -286,7 +323,7 @@ window.addEventListener("scroll", reveal);
 
 <a id="ttop">
 <ul class="s">
-<li class="t"><img src="100.jpg" class="mc" style="width:120px" "height:15px"></li>
+<img src="100.jpg" class="mc" style="width:120px" "height:15px">
 <li class="p"><a class="top" href="#q">CONTACT US</a></li>
 <li class="p"><a class="top" href="#q">IIT PATNA</a></li>
 <li class="p"><a class="topr" href="#q">TEAM</a></li>
@@ -294,6 +331,20 @@ window.addEventListener("scroll", reveal);
 <li class="p"><a class="top" href="#q">HOME</a></li>
 </ul>
 
+<div class="menu">
+<div class="xxx">
+<div class="yyy"></div>
+<div class="yyy"></div>
+<div class="yyy"></div>
+<div class="dropdown">
+<a class="top" href="#q">CONTACT US</a>
+<a class="top" href="#q">IIT PATNA</a>
+<a class="topr" href="#q">TEAM</a>
+<a class="top" href="#q">EVENTS</a>
+<a class="top" href="#q">HOME</a>
+</div>
+</div>
+</div>
 <center>
 <div class="reveal"><div class="intro"><h1><font face="Arial">MEET THE TEAM</font></h1></div></div>
 <div class="reveal">
@@ -457,6 +508,8 @@ window.addEventListener("scroll", reveal);
 <br><br>
 <img src="logo.png" style="width:100px">
 </div>
+<br>
+<br><br><br><br>
 <div class="left">
 <ul class="r">
 <h1><font face="Calibri">Quick Links</h1>
