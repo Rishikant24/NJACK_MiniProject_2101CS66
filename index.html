@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Team Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 /*@keyframes ex{
@@ -165,7 +166,7 @@ li a.bottom:hover{
 					}
 	.left{
 		float: left;
-		width: 250px;
+		width: 25%;
 		height: 500px;
 		justify-content: center;
 		align-items: center;
@@ -174,15 +175,15 @@ li a.bottom:hover{
   
   .right {
 					float: left;
-		width: 280px;
+		width: 25%;
 		height: 500px;
-		justify-content: center;
-		align-items: center;
+		justify-content: right;
+		align-items: right;
 		background-color: #333;
   }
   .symbol{
 			float:left;
-			width:800px;
+			width:50%;
 			height: 500px;
 			justify-content: center;
 		align-items: center;
@@ -203,8 +204,11 @@ li a.bottom:hover{
 
 .xyz{			display: none;
 		}
-.idk{
+.idk{	width: 100%;
 		background-color: #333;
+		justify-content: center;
+		align-items: center;
+		
 		}
 		
 @media (max-width: 1325px){
@@ -243,12 +247,19 @@ li a.bottom:hover{
 										height:150px;
 										}
 										}
+@media (max-width: 767px){	.mc{
+									display:none;
+									}
+									}
 
 .mc{
 		float:left;
 		height: 20px;
 		width: 10px;
 		}
+.t{
+	float:left;
+	}
 </style>
 
 <script>				
@@ -275,7 +286,7 @@ window.addEventListener("scroll", reveal);
 
 <a id="ttop">
 <ul class="s">
-<img src="100.jpg" class="mc" style="width:120px" "height:15px">
+<li class="t"><img src="100.jpg" class="mc" style="width:120px" "height:15px"></li>
 <li class="p"><a class="top" href="#q">CONTACT US</a></li>
 <li class="p"><a class="top" href="#q">IIT PATNA</a></li>
 <li class="p"><a class="topr" href="#q">TEAM</a></li>
@@ -429,7 +440,7 @@ window.addEventListener("scroll", reveal);
 <img src="logo.png" style="width:300px">
 <center>
 </div>
-<div class="right" >
+<div class="right" align="right">
 <h1><font face="Calibri">FOLLOW US ON:</font></h1>
 <ul class="r">
 <li><a class="bottom" href="#q">Facebook</a></li>
